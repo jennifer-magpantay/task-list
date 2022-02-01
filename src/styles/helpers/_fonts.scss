@@ -44,7 +44,7 @@ input,
 select,
 option,
 span,
-label {
+label, li {
   color: $color-text;
   font-size: clamp(1.4rem, 1.6vw, 1.6rem);
 }

@@ -12,7 +12,8 @@
 Ps.: for this, the ul/ol has to be set as <ul role="list"> or <ol role="list"> - this is part of 
 */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+ul, ol, li {
   list-style: none;
 }
 

@@ -1,0 +1,22 @@
+ul {
+    padding: 02rem 0 0 0;
+    li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: $border;
+
+        button {
+            margin-left: auto;
+            background-color: transparent;
+            color: $color-primary;
+            border: 01px solid $color-primary;
+
+            &:hover,
+            &:focus {
+                background-color: $color-primary;
+                color: $color-white;
+            }
+        }
+    }
+}

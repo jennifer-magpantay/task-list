@@ -1,0 +1,23 @@
+form {
+    label {
+        display: block;
+    }
+
+    input {
+        width: 90%;
+        display: inline-block;
+        padding: 0.35em 1.05em;
+        margin-right: 1rem;
+    }
+
+    button {
+        display: inline-block;
+        background-color: $color-primary;
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-primary, 15%);
+        }
+    }
+}

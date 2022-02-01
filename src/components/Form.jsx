@@ -1,19 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const Form = ({ formSubmit, inputChange }) => {
-  const [input, setInput] = useState("");
-
+export const Form = ({ formSubmit, inputChange, value }) => {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formSubmit) {
-      formSubmit();
+      formSubmit(event);
     }
   }
-  function handleInputOnChange({ target }) {
+  function handleInputOnChange(event) {
     if (inputChange) {
-      inputChange(target.value);
+      inputChange(event);
     }
-    console.log(target.value);
   }
   return (
     <form onSubmit={handleFormSubmit}>
@@ -22,11 +19,10 @@ export const Form = ({ formSubmit, inputChange }) => {
         id="task"
         name="task"
         type="text"
-        value={input}
+        value={value}
         onChange={handleInputOnChange}
       />
       <button type="submit">ADD</button>
-      {input}
     </form>
   );
 };

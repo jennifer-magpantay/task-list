@@ -2,7 +2,8 @@ button {
     width: auto;
     display: block;
     padding: 0.5em 1.5em;
-    margin-inline: auto;
+    // margin-inline: auto;
+    border: none;
     cursor: pointer;
     transition: all 0.5s ease;
 }
