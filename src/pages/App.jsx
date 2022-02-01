@@ -1,6 +1,11 @@
-import React from 'react';
+import React from "react";
+import "../styles/app.scss";
+import { Home } from "./Home";
 
 export const App = () => {
-  return <div>Hello Stranger</div>;
+  return (
+    <>
+     <Home />
+    </>
+  );
 };
-
