@@ -6,6 +6,23 @@ ul {
         padding: 1rem 0;
         border-bottom: $border;
 
+        div {
+            width: max(75%);
+            word-break: break-all;
+
+            @include tablet {
+                width: 90%;
+            }
+
+            input[type="checkbox"] {
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+            label.checked {
+                text-decoration: line-through;
+            }
+        }
+
         button {
             margin-left: auto;
             background-color: transparent;

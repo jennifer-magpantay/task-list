@@ -21,6 +21,7 @@ export const Form = ({ formSubmit, inputChange, value }) => {
         type="text"
         value={value}
         onChange={handleInputOnChange}
+        required
       />
       <button type="submit">ADD</button>
     </form>

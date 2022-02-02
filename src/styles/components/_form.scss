@@ -1,19 +1,32 @@
 form {
     label {
         display: block;
+        margin-bottom: 1rem;
     }
 
     input {
-        width: 90%;
+        width: 100%;
         display: inline-block;
         padding: 0.35em 1.05em;
         margin-right: 1rem;
+        border: $border;
+        
+        @include tablet {
+            width: 90%;
+        }
     }
 
     button {
-        display: inline-block;
+        display: block;
+        margin-top: 01rem;
+        margin-left: auto;
         background-color: $color-primary;
         color: $color-white;
+
+        @include tablet {
+            display: inline-block;
+            margin-top: 0;
+        }
 
         &:hover,
         &:focus {

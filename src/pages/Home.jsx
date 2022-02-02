@@ -16,8 +16,12 @@ export const Home = () => {
   function handleInputChange(event) {
     const inputValue = event.target.value;
     setInput(inputValue);
+    console.log(event.target);
   }
 
+  function handleButtonClick(event) {
+    console.log("delete task");
+  }
   return (
     <>
       <Header />
@@ -27,7 +31,7 @@ export const Home = () => {
           inputChange={handleInputChange}
           value={input}
         />
-        <TaskList data={tasks} />
+        <TaskList data={tasks} buttonClick={handleButtonClick} />
       </Main>
     </>
   );
