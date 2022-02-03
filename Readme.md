@@ -9,6 +9,10 @@
 
 - React, Sass.
 
+# Goals
+
+Set a React app from starch, understanding Babel, Webbpack, development enviroment, components and managing component states.
+
 ## Status
 
 Finished.
