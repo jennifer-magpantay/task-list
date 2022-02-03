@@ -4,17 +4,18 @@
 
 ## Preview
 
+
 ## Technologies
 
-- React, TypeScript, Sass.
-
-## Badges
+- React, Sass.
 
 ## Status
 
-In progress.
+Finished.
 
 ## Features
+
+- Add, check and delete tasks.
 
 ## Author
 
