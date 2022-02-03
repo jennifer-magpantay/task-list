@@ -4,12 +4,14 @@
 
 ## Preview
 
+![todo-app](https://user-images.githubusercontent.com/56962997/152361310-e2915196-4355-417d-88c7-c60f9c8576f0.gif)
+
 
 ## Technologies
 
 - React, Sass.
 
-# Goals
+## Goals
 
 Set a React app from starch, understanding Babel, Webbpack, development enviroment, components and managing component states.
 
