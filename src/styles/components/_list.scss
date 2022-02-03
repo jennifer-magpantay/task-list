@@ -17,6 +17,7 @@ ul {
             input[type="checkbox"] {
                 margin-right: 1rem;
                 cursor: pointer;
+                accent-color: $color-primary;
             }
             label.checked {
                 text-decoration: line-through;

@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { getNewId } from "../services/idService";
 
-export const ListItem = ({ item, buttonClick }) => {
+export const ListItem = ({ id, description, buttonClick }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   function handleCheckClick() {
     setIsChecked(!isChecked);
   }
 
+  function handleDeleteButton(id) {
+    if (buttonClick) {
+      buttonClick(id);
+    }
+  }
+
   return (
     <li>
       <div>
-        <input
-          type="checkbox"
-          id={item}
-          name={item}
-          onClick={handleCheckClick}
-        />
-        <label htmlFor={item} className={isChecked ? "checked" : ""}>
-          {item}
+        <input type="checkbox" id={id} name="task" onClick={handleCheckClick} />
+        <label htmlFor="task" className={isChecked ? "checked" : ""}>
+          {description}
         </label>
       </div>
-      <button type="button" onClick={buttonClick}>
+      <button type="button" onClick={() => handleDeleteButton(id)}>
         DELETE
       </button>
     </li>

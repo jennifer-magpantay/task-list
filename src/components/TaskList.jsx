@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { getNewId } from "../services/idService";
+import React from "react";
 import { ListItem } from "./ListItem";
 
 export const TaskList = ({ data, buttonClick }) => {
   return (
     <ul>
-      {data.map((item) => {
-        return <ListItem key={item} item={item} buttonClick={buttonClick} />;
+      {data.map(({ id, description }) => {
+        return <ListItem key={id} id={id} description={description} buttonClick={buttonClick}/>;
       })}
     </ul>
   );

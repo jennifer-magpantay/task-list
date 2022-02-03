@@ -5,15 +5,17 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed 
 Ps.: for this, the ul/ol has to be set as <ul role="list"> or <ol role="list"> - this is part of 
 */
-ul[role='list'],
-ol[role='list'],
-ul, ol, li {
+ul[role="list"],
+ol[role="list"],
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -46,17 +48,16 @@ input,
 button,
 textarea,
 select {
-  font: inherit; 
+  font: inherit;
 }
 /* font is a shorthand for the properies: font-family, font-weight, font-strech, font-variant, font-size */
-
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
