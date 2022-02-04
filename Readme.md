@@ -4,6 +4,8 @@
 
 ## Preview
 
+![todo-app](https://user-images.githubusercontent.com/56962997/152361310-e2915196-4355-417d-88c7-c60f9c8576f0.gif)
+
 
 ## Technologies
 
