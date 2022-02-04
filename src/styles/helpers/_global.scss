@@ -10,7 +10,7 @@ body {
 .container {
     width: 80%;
     position: absolute;
-    top: 30vh;
+    top: clamp(25vh, 15vw, 30vh);
     left: -50%;
     right: -50%;
     padding: 3rem 6% 2rem;

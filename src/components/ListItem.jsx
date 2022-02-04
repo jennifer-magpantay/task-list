@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const ListItem = ({ id, description, buttonClick }) => {
-  const [isChecked, setIsChecked] = useState(false);
-
   function handleCheckClick() {
     setIsChecked(!isChecked);
   }
@@ -16,10 +14,14 @@ export const ListItem = ({ id, description, buttonClick }) => {
   return (
     <li>
       <div>
-        <input type="checkbox" id={id} name="task" onClick={handleCheckClick} />
-        <label htmlFor="task" className={isChecked ? "checked" : ""}>
-          {description}
-        </label>
+        <input
+          type="checkbox"
+          id={id}
+          name="task"
+          value={description}
+          onClick={handleCheckClick}
+        />
+        <label htmlFor="task">{description}</label>
       </div>
       <button type="button" onClick={() => handleDeleteButton(id)}>
         DELETE

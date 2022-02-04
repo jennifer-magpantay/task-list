@@ -14,14 +14,20 @@ ul {
                 width: 90%;
             }
 
-            input[type="checkbox"] {
+            input {
                 margin-right: 1rem;
                 cursor: pointer;
                 accent-color: $color-primary;
             }
-            label.checked {
+
+            input:checked {
                 text-decoration: line-through;
+                & ~ label {
+                    color: $color-gray;
+                     text-decoration: line-through;
+                }
             }
+           
         }
 
         button {
